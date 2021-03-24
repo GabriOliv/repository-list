@@ -2,7 +2,7 @@
 <html><head>
 
 	<!-- Metadata -->
-	<title>homepage</title>
+	<title>repository-list</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -21,7 +21,6 @@
 
 <body class="bg-secondary">
 
-	<!-- Header Menu -->
 	<header>
 		<div class="bg-dark collapse" id="navbarHeader">
 			<div class="container">
@@ -29,8 +28,8 @@
 					<div class="col-sm-8 col-md-7 py-4">
 						<h4 class="text-white">About</h4>
 						<p class="text-muted">
-							Profile Startpage using Full Bootstrap 5 and Github Pages.
-							The Link list below is generated with the javascript script hosted in my GitHub Repository.
+							Web Page using Full Bootstrap 5 and Github Pages.
+							The site is generated with the code hosted in my GitHub Repository.
 						</p>
 					</div>
 					<div class="col-sm-4 offset-md-1 py-4">
@@ -39,7 +38,7 @@
 							<li><a class="text-info text-decoration-none" href="https://github.com/GabriOliv" target="_blank">
 								<i class="bi bi-github"></i> GitHub Profile
 							</a></li>
-							<li><a class="text-light text-decoration-none" href="https://github.com/GabriOliv/GabriOliv.github.io" target="_blank">
+							<li><a class="text-light text-decoration-none" href="https://github.com/GabriOliv/repository-list" target="_blank">
 								<i class="bi bi-archive"></i> Project Repository
 							</a></li></br>
 							<li><a class="text-light text-decoration-none" href="https://getbootstrap.com/docs/versions/" target="_blank">
@@ -54,17 +53,16 @@
 			</div>
 		</div>
 
-		<div class="navbar navbar-dark bg-dark shadow p-2 mb-3 rounded">
+		<div class="navbar navbar-dark bg-dark shadow p-2 mb-3">
 			<div class="container">
 				<a href="" class="navbar-brand d-flex align-items-center">
 					<strong class="text-light text-decoration-none">
 						<h1>
 							<i class="bi bi-github" style="font-size: 2rem; color:whitesmoke;"></i>
-							StartPage
+							Repository List
 						</h1>
 					</strong>
 				</a>
-
 				<a
 					class="btn btn-dark"
 					type="button"
@@ -79,17 +77,19 @@
 		</div>
 	</header>
 
+	<!-- Sidebar Toggle Button -->
+	<div class="container-fluid">
+		<a
+			href="https://gabrioliv.github.io/"
+			class="btn btn-dark"
+			role="button"
+			aria-disabled="true">
+			<i class="bi bi-arrow-left-square-fill" style="font-size: 1.5rem"></i>
+		</a>
+	</div>
+
 	<!-- Main Page -->
 	<div class="container-fluid">
-
-		<!-- Sidebar Toggle Button -->
-		<button
-			type="button"
-			class="btn btn-dark toggler"
-			data-bs-toggle="collapse"
-			data-bs-target="#sidebarMenu">
-			<i class="bi bi-person-lines-fill" style="font-size: 1.5rem"></i>
-		</button>
 
 		<div class="row">
 			<!-- Sidebar Menu-->
@@ -110,65 +110,31 @@
 				</div>
 			</nav>
 
-			<!-- Main Content -->
+			<!--Repository List-->
 			<main class="col-md">
 
-				<!--Repository List-->
 				<div class="container navbar navbar-dark col-xs-4 p-3 my-5 bg-dark rounded">
-					<div class="container">
-						<a class="navbar-brand d-flex align-items-center">
-							<code class="text-light text-decoration-none"><b>
-								<i class="bi bi-columns-gap"></i>
-								Pages
-							</b></code>
-						</a>
-						<a
-							class="btn btn-dark"
-							type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#navbarPages"
-							aria-controls="navbarPages"
-							aria-expanded="true"
-							aria-label="Toggle navigation">
-							<i class="bi bi-list" style="font-size: 1.5rem"></i>
-						</a>
-					</div>
-
-					<div class="container p-0 my-0 bg-secondary">
-						<div class="collapse container p-0 my-0" id="navbarPages">
-							<ul class="list-group list-group-flush text-break">
-								<a
-									href="./startpage"
-									class="list-group-item list-group-item-action text-center"
-									aria-current="true"
-									><i class="bi bi-list-stars"></i> StartPage</a>
-								<a
-									href="./startpage"
-									class="list-group-item list-group-item-action text-center disabled"
-									aria-current="true"
-									>Coming Soon</a>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<!--Repository List-->
-				<div class="container navbar navbar-dark col-xs-4 p-3 my-5 bg-dark rounded">
-					<div class="container">
+					<div class="container p-0 my-0">
 						<a class="navbar-brand d-flex align-items-center">
 							<code class="text-light text-decoration-none"><b>
 								<i class="bi bi-archive"></i>
 								Repositories
 							</b></code>
 						</a>
-
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRepository" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
-							<i class="bi bi-list" style="font-size: 2rem"></i>
-						</button>
+						<a
+							class="btn btn-dark"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarRepository"
+							aria-controls="navbarRepository"
+							aria-expanded="true"
+							aria-label="Toggle navigation">
+							<i class="bi bi-list" style="font-size: 1.5rem"></i>
+						</a>
 					</div>
 
-					<div class="container bg-dark text-break">
-						<div class="collapse show text-break" id="navbarRepository">
+					<div class="container p-0 my-0 bg-dark">
+						<div class="collapse" id="navbarRepository">
 							<p id="userRepos" class="list-group list-group-flush text-break"></p>
 
 							<button
