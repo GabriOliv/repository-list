@@ -20,7 +20,7 @@ function requestUserRepos(){
         let p = document.getElementById('userRepos');
         p.innerHTML = (`
             <code class="text-light font-monospace fs-5">
-                <i class="bi bi-caret-right-fill">${data.length}</i>
+                <i class="bi bi-caret-right-fill"> ${data.length}</i>
             </code>
         `)
 
@@ -41,11 +41,16 @@ function requestUserRepos(){
 
             nav.innerHTML = (`
                 <div class="container">
-                    <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRepo${counter}" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
-                        <i class="bi bi-list fs-5">
-                            <code class="navbar-brand">${data[i].name}</code>
-                        </i>
-                    </button>
+                    <a
+                        class="btn btn-dark text-break text-start"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarRepo${counter}"
+                        aria-controls="navbarHeader"
+                        aria-expanded="true"
+                        aria-label="Toggle Repository ${data[i].name}">
+                        <i class="bi bi-list fs-5"> ${data[i].name}</i>
+                    </a>
                     <div class="collapse navbar-collapse" id="navbarRepo${counter}">
                         <ul class="navbar-nav">
                             <p></p>
