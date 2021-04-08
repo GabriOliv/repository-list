@@ -13,4 +13,4 @@
 | ------ | ------ |
 | [HomePage](https://gabrioliv.github.io/) | [GabriOliv.github.io](https://github.com/GabriOliv/GabriOliv.github.io) |
 | [StartPage](https://gabrioliv.github.io/startpage/) | [startpage](https://github.com/GabriOliv/startpage) |
-
+| [Password Generator](https://gabrioliv.github.io/wordgenerator/) | [wordgenerator](https://github.com/GabriOliv/wordgenerator) |
